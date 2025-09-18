@@ -1,0 +1,117 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("resources/images/arcade.jpg");
+
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+button {
+    margin: 10px;
+    font-size: 1.5rem;
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -10px;
+    left: 10px;
+    width: fit-content;
+    margin: auto;
+    display: inline-block;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
+}
+
+
+.game-board {
+    width:300px;
+    height: 300px;
+    margin: auto;
+    border: 5px solid blueviolet;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    top: 10px;
+    background-color: blue;
+}
+
+.game-board .cell {
+    background-color: white;
+    border: 2px solid black;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
