@@ -12,18 +12,11 @@ body {
 }
 
 .bg-img {
-  /* The image used */
   background-image: url("resources/images/arcade.jpg");
-
-  /* Add the blur effect */
   filter: blur(4px);
   -webkit-filter: blur(4px);
-
-  /* Full height */
   height: 100%;
   width: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,7 +78,6 @@ h1 {
     height: 50%;
     width: 50%;
 }
-
 
 .game-board {
     width:300px;
